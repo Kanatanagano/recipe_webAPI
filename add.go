@@ -2,12 +2,11 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"os"
 )
 
 func addDataToConfig(newData Config) error {
-	file, err := os.Open("config.json")
+	file, err := os.Open("config/config.json")
 	if err != nil {
 		return err
 	}
@@ -32,7 +31,7 @@ func addDataToConfig(newData Config) error {
 	}
 
 	// エンコードしたJSONデータをファイルに書き込みます
-	err = ioutil.WriteFile("config.json", jsonData, 0644)
+	err = os.WriteFile("config/config.json", jsonData, 0644)
 	if err != nil {
 		return err
 	}

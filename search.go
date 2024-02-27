@@ -6,7 +6,7 @@ import (
 )
 
 func searchInConfig(key string) (string, error) {
-	file, err := os.Open("config.json")
+	file, err := os.Open("config/config.json")
 	if err != nil {
 		return "", err
 	}
