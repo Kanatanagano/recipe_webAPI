@@ -16,7 +16,7 @@ func searchInConfig(key string) (string, error) {
 	decoder := json.NewDecoder(file)
 	err = decoder.Decode(&config)
 	if err != nil {
-		return "", err
+		return "file error", err
 	}
 
 	switch key {
@@ -27,6 +27,6 @@ func searchInConfig(key string) (string, error) {
 	case "howto":
 		return config.HowTo, nil
 	default:
-		return "", nil
+		return "file error", nil
 	}
 }
