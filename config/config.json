@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "Spaghetti Carbonara",
+  "description": "A classic Italian pasta dish made with eggs, cheese, bacon, and black pepper.",
+  "ingredients": [
+    "Spaghetti pasta",
+    "Eggs",
+    "Parmesan cheese",
+    "Bacon or pancetta",
+    "Black pepper",
+    "Salt"
+  ],
+  "instructions": [
+    "Cook spaghetti according to package instructions until al dente.",
+    "In a separate bowl, whisk together eggs, grated Parmesan cheese, and black pepper.",
+    "In a pan, cook chopped bacon until crispy. Remove excess fat.",
+    "Add cooked spaghetti to the pan with bacon. Mix well.",
+    "Remove pan from heat and quickly stir in the egg and cheese mixture until it coats the pasta evenly. The residual heat will cook the eggs and create a creamy sauce.",
+    "Season with salt and additional black pepper if desired. Serve hot."
+  ],
+  "prep_time_minutes": 10,
+  "cook_time_minutes": 15,
+  "total_time_minutes": 25,
+  "servings": 4,
+  "difficulty": "Medium",
+  "rating": 4.8
+}
