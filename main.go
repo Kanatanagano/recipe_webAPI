@@ -10,7 +10,9 @@ func main() {
 	fmt.Println("Server is running on port 8080")
 
 	// ルーティングとハンドラーの登録
-	http.HandleFunc("/api/recipe", RecipeHandler)
+	http.HandleFunc("/items", listItems)
+	http.HandleFunc("/item/", getItemByID)
+	http.HandleFunc("/search", searchItemsByName)
 
 	http.ListenAndServe(":8080", nil)
 }
